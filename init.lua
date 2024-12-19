@@ -54,15 +54,17 @@ else
 	--hover
 	require("neovim.config_plugins.hover")
 	require("neovim.config_plugins.trouble")
+	--accelerate.lua
+	-- require("neovim.config_plugins.accelerate")
 	--mini.ai
 	-- require("neovim.config_plugins.miniai")
 	-- indent_blankline
 	require("neovim.config_plugins.indent_blankline")
 	-- color theme
-	require("neovim.config_colors.base16_mini")
-	-- require("config_colors.base16_solarized")
-	-- require("config_colors.base16_ayu")
-	-- require("config_colors.base16_github")
+  -- require("neovim.config_colors.base16_mini")
+  -- require("neovim.config_colors.base16_solarized")
+  -- require("neovim.config_colors.base16_ayu")
+  require("neovim.config_colors.base16_github")
 	-- shortcut
 	require("neovim.config_general.keybindings")
 	-- lsp default config
