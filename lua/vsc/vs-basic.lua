@@ -9,8 +9,8 @@ vim.o.scrolloff = 4
 vim.o.sidescrolloff = 4
 
 -- 使用相对行号
--- vim.wo.number = true
--- vim.wo.relativenumber = true
+vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- 高亮所在行
 -- vim.wo.cursorline = true

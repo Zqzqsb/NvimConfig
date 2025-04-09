@@ -1,5 +1,7 @@
 -- install lazy nvim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+vim.g.python3_host_prog = '/usr/bin/python3'
+
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
@@ -27,7 +29,7 @@ else
 	-- lazy(plugin manger)
 	require("neovim.config_plugins.lazy")
 	-- cmp
-	require("neovim.config_plugins.cmp")
+	-- require("neovim.config_plugins.cmp")
 	-- manson
 	require("neovim.config_plugins.mason")
 	-- colorizer
@@ -61,10 +63,10 @@ else
 	-- indent_blankline
 	require("neovim.config_plugins.indent_blankline")
 	-- color theme
-  -- require("neovim.config_colors.base16_mini")
-  -- require("neovim.config_colors.base16_solarized")
-  -- require("neovim.config_colors.base16_ayu")
-  require("neovim.config_colors.base16_github")
+	-- require("neovim.config_colors.base16_mini")
+	-- require("config_colors.base16_solarized")
+	-- require("config_colors.base16_ayu")
+	require("neovim.config_colors.base16_github")
 	-- shortcut
 	require("neovim.config_general.keybindings")
 	-- lsp default config

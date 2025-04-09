@@ -72,4 +72,17 @@ lazy.setup({
 	{ "echasnovski/mini.base16", version = "*" },
 	--caddy
 	{ "isobit/vim-caddyfile" },
+  {
+    "SirVer/ultisnips",
+    dependencies = { "honza/vim-snippets" },
+    config = function()
+      -- 设置 UltiSnips 触发按键
+      vim.g.UltiSnipsExpandTrigger = "<tab>"
+      vim.g.UltiSnipsJumpForwardTrigger = "<tab>"
+      vim.g.UltiSnipsJumpBackwardTrigger = "<s-tab>"
+      -- 设置 Snippets 存放目录
+      vim.g.UltiSnipsSnippetDirectories = { "UltiSnips", "my_snippets" }
+    end,
+    event = "InsertEnter",  -- 在插入模式时加载插件
+  }
 })
