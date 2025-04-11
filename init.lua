@@ -1,6 +1,6 @@
 -- install lazy nvim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-vim.g.python3_host_prog = '/usr/bin/python3'
+vim.g.python3_host_prog = '/Users/zhangqing/miniconda3/envs/nvim/bin/python'
 
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -66,7 +66,6 @@ else
 	-- require("neovim.config_colors.base16_mini")
 	-- require("config_colors.base16_solarized")
 	-- require("config_colors.base16_ayu")
-	require("neovim.config_colors.base16_github")
 	-- shortcut
 	require("neovim.config_general.keybindings")
 	-- lsp default config
